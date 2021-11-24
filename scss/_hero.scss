@@ -1,0 +1,28 @@
+.hero{
+    margin-bottom: 185px;
+    &-main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-content{
+        width: 100%;
+        max-width: 445px;
+    }
+    &-heading{
+        font-style: Bold;
+        font-size: 48px;
+        line-height: 56px;
+        color:$black;
+        margin-bottom: 25px;
+        font-weight: 700;
+        font-size: 48px;
+    }
+    &-desc{
+        color: $gay;
+        font-size: 21px;
+        line-height: 32px;
+        margin-bottom: 	45px;
+
+    }
+}
