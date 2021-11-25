@@ -1,0 +1,35 @@
+.feature{
+    margin-bottom: 266px;
+    &-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+    &-item + .feature-item{
+        margin-top: 230px;
+    } 
+    &-item:nth-child(2){
+        flex-direction: row-reverse;
+        .feature-img{
+            transform: translateX(28px);
+        }
+        .feature-content{
+            margin-left: 90px;
+        }
+        .feature-heading{
+            max-width: 254px;
+        }
+    }
+    &-img{
+        transform: translateX(-56px);
+    }
+    &-content{
+        max-width: 450px;
+        width: 100%;
+    }
+    &-desc{
+        margin-bottom: 37px;
+
+    }
+}
