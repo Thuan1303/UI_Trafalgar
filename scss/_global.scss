@@ -30,3 +30,34 @@
         border: 1px solid currentColor;
     }
 }
+.global-heading{
+    color: $black;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 156%;
+    padding-bottom: 26px;
+    margin-bottom: 30px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 56px;
+        height: 2px;
+        background-color: $black;
+        bottom: 0;
+        left: 0;
+
+    }
+}
+.global-heading_center{
+    text-align: center;
+    &::before{
+        content: "";
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.global-text{
+    font-size: 18px;
+    line-height: 167%;
+}
