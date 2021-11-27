@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="./assets/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>Trafalgar</title>
 </head>
 <body>
@@ -111,7 +118,7 @@
                 <div class="container-fluid">
                     <div class="feature-item">
                         <div class="feature-img">
-                            <img srcset="/img/illustration2.png 2x" alt="">
+                            <img srcset="./img/illustration2.png 2x" alt="">
                         </div>
                         <div class="feature-content">
                             <h2 class="global-heading">Leading healthcare providers</h2>
@@ -123,7 +130,7 @@
                     </div>
                     <div class="feature-item">
                         <div class="feature-img">
-                            <img srcset="/img/illustration3.png 2x" alt="">
+                            <img srcset="./img/illustration3.png 2x" alt="">
                         </div>
                         <div class="feature-content">
                             <h2 class="global-heading feature-heading">Download our 
@@ -161,8 +168,140 @@
                         <div class="review-nav"></div>
                     </div>
                 </div>
+            </section><section class="article">
+                <div class="container">
+                    <h2 class="global-heading global-heading_center article-heading">
+                        Check out our latest article
+                    </h2>
+                    <div class="article-list">
+                        <div class="article-item">
+                            <div class="article-img">
+                                <img src="https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" alt="">
+                            </div>
+                            <div class="article-content">
+                                <h3 class="article-title">
+                                    Disease detection, check up in the laboratory
+                                </h3>
+                                <div class="article-desc">
+                                    In this case, the role of the health laboratory is very important to do a disease detection...
+                                </div>
+                                <a href="#!" class="article-details">
+                                    <span>Read more</span>
+                                    <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="article-item">
+                            <div class="article-img">
+                                <img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="">
+                            </div>
+                            <div class="article-content">
+                                <h3 class="article-title">
+                                    Herbal medicines that are safe for consumption
+                                </h3>
+                                <div class="article-desc">
+                                    Herbal medicine is very widely used at this time because of its very good for your health...
+                                </div>
+                                <a href="#!" class="article-details">
+                                    <span>Read more</span>
+                                    <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="article-item">
+                            <div class="article-img">
+                                <img src="https://images.unsplash.com/photo-1613918108466-292b78a8ef95?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" alt="">
+                            </div>
+                            <div class="article-content">
+                                <h3 class="article-title">
+                                    Natural care for healthy facial skin
+                                </h3>
+                                <div class="article-desc">
+                                    A healthy lifestyle should start from now and also for your skin health. There are some...
+                                </div>
+                                <a href="#!" class="article-details">
+                                    <span>Read more</span>
+                                    <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#!"><button class="button button--secondary center-inline">View all</button></a>
+                </div>
             </section>
         </main>
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="footer-main">
+                    <div class="footer-col">
+                        <img srcset="./img/logo-white.png 2x" alt="" class="footer-logo">
+                        <div class="footer-desc">
+                            Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone
+                        </div>
+                        <div class="footer-copyright">
+                            ©Trafalgar PTY LTD 2020. All rights reserved
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h3 class="footer-heading">
+                            Company
+                        </h3>
+                        <ul class="footer-links">
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">About</a>
+                            </li> 
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Testimonials</a>
+                            </li> 
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Find a doctor</a>
+                            </li> 
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Apps</a>
+                            </li> 
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3 class="footer-heading">
+                            Region
+                        </h3>
+                        <ul class="footer-links">
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Indonesia</a>
+                            </li> 
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Singapore</a>
+                            </li> 
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Hongkong</a>
+                            </li> 
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Canada</a>
+                            </li> 
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3 class="footer-heading">
+                            Help
+                        </h3>
+                        <ul class="footer-links">
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Help center</a>
+                            </li> 
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Contact support</a>
+                            </li> 
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Instructions</a>
+                            </li> 
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">How it works</a>
+                            </li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

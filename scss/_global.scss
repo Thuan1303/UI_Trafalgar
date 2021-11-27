@@ -2,7 +2,7 @@
     max-width: 1600px;
 }
 .container{
-    max-width: 1120px;
+    max-width: 1160px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -61,4 +61,9 @@
 .global-text{
     font-size: 18px;
     line-height: 167%;
+}
+.center-inline{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }

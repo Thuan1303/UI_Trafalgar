@@ -1,0 +1,37 @@
+.footer{
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    padding: 118px 0 113px ;
+    &-main{
+    color: #fff;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-gap:0 34px;
+}
+&-logo{
+    display: inline-block;
+    margin-bottom: 17px;
+}
+&-desc{
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 156%;
+}
+&-heading{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+&-links{
+    list-style: none;
+}
+&-item{
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+&-link{
+    color: inherit;
+    font-size: 18px;
+    &:hover{
+        opacity: 0.6;
+    }
+}
+}
