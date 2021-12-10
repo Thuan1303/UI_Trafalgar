@@ -34,4 +34,15 @@
         opacity: 0.6;
     }
 }
+@media screen and (max-width: 767px) {
+    padding: 40px 0;
+    &-main{
+        grid-template-columns: 1fr;
+        gap: 20px 34px;
+    }
+    &-heading{
+        margin-bottom: 15px;
+    }
+}
+
 }

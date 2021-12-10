@@ -13,5 +13,40 @@
     &-link:hover{
         color: $black;
         font-weight: bold;
+        
     }
+    &-close{
+        display: none;
+    }
+    @media screen and (max-width: 767px) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9;
+        background-color: #fff;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        width: 300px;
+        flex-direction: column;
+        align-items: stretch;
+        display: none;
+        &-link{
+            width: 100%;
+            display: block;
+            padding: 15px 25px;
+            margin-left: 100px;
+            align-self: stretch;
+        }
+        &-close{
+            position: absolute;
+            display: inline-block;
+            color: $black;
+            left: 0;
+            padding: 10px;
+        }
+    }
+
+    
 }
+
+

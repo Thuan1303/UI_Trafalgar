@@ -1,5 +1,6 @@
 .wrapper{
     max-width: 1600px;
+    margin: 0 auto;
 }
 .container{
     max-width: 1160px;
@@ -10,6 +11,7 @@
     max-width: 1260px;
     margin: 0 auto;
     padding: 0 20px;
+    overflow: hidden;
 }
 .button{
     display: inline-block;
@@ -66,4 +68,13 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+}
+@media screen and (max-width: 1023px) {
+    .global-heading{
+        font-size: 25px;
+    }
+    .button {
+        font-size: 16px;
+        padding: 15px 40px;
+    }
 }
