@@ -69,6 +69,10 @@
     left: 50%;
     transform: translateX(-50%);
 }
+.global-dots{
+    position: absolute;
+    z-index: -1;
+}
 @media screen and (max-width: 1023px) {
     .global-heading{
         font-size: 25px;
@@ -78,3 +82,9 @@
         padding: 15px 40px;
     }
 }
+@media screen and (max-width: 767px) {
+    .global-dots{
+      display: none;
+    }
+}
+

@@ -8,10 +8,18 @@
         margin: 0 auto 80px;
     }
     &-list{
+        position: relative;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 34px;
         margin-bottom: 70px;
+    }
+    &-dots{
+        right: 0;
+        top: 50%;
+        transform: translate(25%, -50%);
+        z-index: -1;
+        
     }
     &-item{
         background-color: #fff;

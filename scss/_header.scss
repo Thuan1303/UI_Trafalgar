@@ -10,6 +10,11 @@
     &-iconmenu{
         display:none;
     }
+    &-dots{
+        top: 160px;
+        left: 0;
+        transform: translate(-30%, 0);
+    }
     @media screen and (max-width: 1023px) {
     margin-bottom: 60px;
     padding-top: 30px;

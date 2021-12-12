@@ -1,5 +1,11 @@
 .feature{
     margin-bottom: 266px;
+    position: relative;
+    &-dots{
+        right: 0;
+        top: 50%;
+        transform: translate(25%, -50%);
+    }
     &-item{
         display: flex;
         justify-content: space-between;

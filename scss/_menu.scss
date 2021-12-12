@@ -15,34 +15,73 @@
         font-weight: bold;
         
     }
-    &-close{
-        display: none;
-    }
     @media screen and (max-width: 767px) {
         position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
-        z-index: 9;
-        background-color: #fff;
+        z-index: 9999;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        width: 300px;
+        width: 100%;
         flex-direction: column;
-        align-items: stretch;
-        display: none;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s ease;
+        text-transform: uppercase;
+        font-size: 20px;
+        color:#fff;
+        margin-top: 50px;
+        gap: 15px;
+        &.is-active{
+            opacity: 1;
+            visibility: visible;
+        }
+        &-item{
+            width: 100%;
+            text-align: center;
+        }
         &-link{
             width: 100%;
             display: block;
             padding: 15px 25px;
-            margin-left: 100px;
-            align-self: stretch;
+            align-items: center;
         }
         &-close{
-            position: absolute;
+            position:fixed;
             display: inline-block;
             color: $black;
             left: 0;
             padding: 10px;
+            display: none;
+        }
+    }
+    &-close{
+        display: none;
+        &.is-active{
+            display: inline-block;
+            position: absolute;
+            color: #fff;
+            top: 0px;
+            z-index: 2;
+            
+        }
+    }
+    &-toggle{
+        font-size: 30px;
+        cursor: pointer;
+    }
+    &-bg{
+        width: 50px;
+        height: 50px;
+        border-radius: 100rem;
+        background-color: $primary-color;
+        position: fixed;
+        right: 45px;
+        z-index: 0;
+        transform: scale(0);
+        transition: all 0.7s ease;
+        &.is-active{
+            transform: scale(100);
         }
     }
 

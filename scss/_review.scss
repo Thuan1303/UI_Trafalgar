@@ -1,5 +1,11 @@
 .review{
   margin-bottom: 280px;
+  position: relative;
+  &-dot1{
+    left: 53px;
+    top: 0;
+    transform: translate(0, -50%);
+  }
   &-heading{
     --heading-color: #fff;
     margin-bottom: 66px;
@@ -8,7 +14,14 @@
     background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
     border-radius: 24px;
     padding: 64px 118px 80px;
+    position: relative;
+    overflow: hidden;
   }
+  &-dot2{
+    right: 0;
+    top: 0;
+    transform: translate(20% , -20%);
+}
   &-content{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -53,13 +66,35 @@
     width: 100%;
   }
   @media screen and (max-width: 1023px) {
-    &-content{
-      grid-template-columns: 1fr ;
-      align-items: center;
+    margin-bottom: 100px;
+    &-main{
+      padding: 40px 20px ;
     }
-    &-info{
-      margin-top: 30px;
+
+  }
+  @media screen and (max-width: 767px) {
+    &-heading{
+      margin-bottom: 40px;
+    }
+    &-content{
+      grid-template-columns: 1fr;
+      grid-gap: 34px 0;
+    }
+    &-avt{
+      width: 100px;
+      height: 100px;
+    }
+    &-customer{
+      gap: 0 15px;
+    }
+    &-name{
+      font-size: 18px;
+    }
+    &-desc,
+    &-job{
+      font-size: 16px;
     }
   }
+  
   
 }
