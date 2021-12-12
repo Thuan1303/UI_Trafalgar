@@ -11,7 +11,31 @@ window.addEventListener("load",function(){
         menuClose.classList.add("is-active");
     }
     menuClose.addEventListener("click",function(){
-        menu.classList.remove("is-active")
-        menuBg.classList.remove("is-active")
+        menu.classList.remove("is-active");
+        menuBg.classList.remove("is-active");
+        menuClose.classList.remove("is-active");
+    this.classList.remove("is-active");
+
+
     } )
 })
+$(".review-list").slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    prevArrow:
+    "<button type='button' class='slick-prev slick-arrow'><ion-icon name='arrow-back-outline'></ion-icon></button>",
+    nextArrow:
+    "<button type='button' class='slick-next slick-arrow'><ion-icon name='arrow-forward-outline'></ion-icon></button>",
+    responsive: [
+        {
+        breakpoint: 480,
+        settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+            },
+        },
+    ],
+});

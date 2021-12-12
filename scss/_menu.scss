@@ -15,7 +15,22 @@
         font-weight: bold;
         
     }
-    @media screen and (max-width: 767px) {
+
+    &-link{
+        width: 100%;
+        display: block;
+        padding: 15px 25px;
+        align-items: center;
+    }
+    &-close{
+        position:fixed;
+        display: inline-block;
+        color: $black;
+        right: 0;
+        padding: 10px;
+        display: none;
+    }
+    @media screen and (max-width: 1023px) {
         position: fixed;
         top: 0;
         right: 0;
@@ -26,7 +41,7 @@
         flex-direction: column;
         opacity: 0;
         visibility: hidden;
-        transition: all 0.2s ease;
+        transition: all 0.5s ease;
         text-transform: uppercase;
         font-size: 20px;
         color:#fff;
@@ -36,33 +51,37 @@
             opacity: 1;
             visibility: visible;
         }
+        &.is-active .menu-item{
+            animation: slide 1s ease forwards 1;
+            animation-delay: -0.5s;
+            &:nth-child(2){
+                animation-delay: -0.4s;
+            }
+            &:nth-child(3){
+                animation-delay: -0.3s;
+            }
+            &:nth-child(4){
+                animation-delay: -0.2s;
+            }
+            &:nth-child(5){
+                animation-delay: -0.1s;
+            }
+        }
         &-item{
             width: 100%;
             text-align: center;
-        }
-        &-link{
-            width: 100%;
-            display: block;
-            padding: 15px 25px;
-            align-items: center;
-        }
-        &-close{
-            position:fixed;
-            display: inline-block;
-            color: $black;
-            left: 0;
-            padding: 10px;
-            display: none;
+            transition: all 0.2s linear;
+            transform: translateX(-100%);
         }
     }
     &-close{
         display: none;
         &.is-active{
             display: inline-block;
-            position: absolute;
+            position: fixed;
             color: #fff;
             top: 0px;
-            z-index: 2;
+            z-index: 9;
             
         }
     }
@@ -76,16 +95,21 @@
         border-radius: 100rem;
         background-color: $primary-color;
         position: fixed;
-        right: 45px;
-        z-index: 0;
+        right: 10px;
+        z-index: 5;
         transform: scale(0);
-        transition: all 0.7s ease;
+        transition: all 0.5s ease;
         &.is-active{
             transform: scale(100);
         }
     }
 
     
+}
+@keyframes slide {
+    to{
+        transform: translate(0);
+    }
 }
 
 
